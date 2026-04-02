@@ -35,17 +35,18 @@ export default function Home() {
           alt=""
           width={501}
           height={673}
-          className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-auto opacity-[0.04] select-none sm:h-[600px] lg:h-[700px]"
+          className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-auto opacity-[0.12] select-none sm:h-[600px] lg:h-[700px]"
           aria-hidden="true"
         />
         <h1 className="relative font-[family-name:var(--font-druk)] text-4xl uppercase leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          Software so good
+          Magical
           <br />
-          it feels like magic
+          Sales
+          <br />
+          Tools
         </h1>
         <p className="relative mt-6 max-w-xl text-lg text-gray-600 sm:text-xl">
-          Construction software designed by contractors, for contractors.
-          Focused tools that solve one problem at a time.
+          Focused tools that are built to radically grow your business.
         </p>
 
         {/* Email Capture */}
@@ -90,8 +91,9 @@ export default function Home() {
               HVAC Sales Tool
             </h2>
             <p className="mt-2 text-gray-600">
-              Build professional HVAC proposals in minutes. Equipment selection,
-              pricing, financing — all in one place.
+              Build professional HVAC proposals in a revolutionary way. System
+              builder, built-in financing options, dynamic presentation
+              generator.
             </p>
           </div>
 
@@ -103,8 +105,8 @@ export default function Home() {
               Plumbing Sales Tool
             </h2>
             <p className="mt-2 text-gray-600">
-              Streamline plumbing estimates and proposals. Purpose-built for
-              plumbing contractors who want tools that actually work.
+              Completely change how you approach plumbing estimation with an
+              industry defining way to price any job on the spot.
             </p>
           </div>
         </div>
