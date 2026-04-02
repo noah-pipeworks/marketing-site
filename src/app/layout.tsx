@@ -16,6 +16,25 @@ export const metadata = {
   title: "Pipeworks — Magical Sales Tools",
   description:
     "Focused tools built to radically grow your business. Join the waitlist.",
+  metadataBase: new URL("https://pipeworks.io"),
+  icons: {
+    icon: "/wizard-icon.png",
+    apple: "/wizard-icon.png",
+  },
+  openGraph: {
+    title: "Pipeworks — Magical Sales Tools",
+    description:
+      "Focused tools built to radically grow your business. Join the waitlist.",
+    url: "https://pipeworks.io",
+    siteName: "Pipeworks",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Pipeworks — Magical Sales Tools",
+    description:
+      "Focused tools built to radically grow your business. Join the waitlist.",
+  },
 };
 
 export default function RootLayout({
