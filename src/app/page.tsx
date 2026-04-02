@@ -54,13 +54,17 @@ export default function Home() {
           action={formAction}
           className="relative mt-10 flex w-full max-w-md flex-col gap-3 sm:flex-row"
         >
+          <label htmlFor="waitlist-email" className="sr-only">
+            Email address
+          </label>
           <input
+            id="waitlist-email"
             type="email"
             name="email"
             placeholder="you@company.com"
             required
             disabled={isPending}
-            className="flex-1 rounded-lg border border-gray-300 px-4 py-3 text-base outline-none transition-colors placeholder:text-gray-400 focus:border-black disabled:opacity-50"
+            className="flex-1 rounded-lg border border-gray-300 px-4 py-3 text-base outline-none transition-colors placeholder:text-gray-400 focus-visible:ring-2 focus-visible:ring-black focus-visible:border-transparent disabled:opacity-50"
           />
           <button
             type="submit"

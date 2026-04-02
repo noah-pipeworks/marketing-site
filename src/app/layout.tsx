@@ -13,9 +13,9 @@ const drukWideBold = localFont({
 });
 
 export const metadata = {
-  title: "Pipeworks — Software so good it feels like magic",
+  title: "Pipeworks — Magical Sales Tools",
   description:
-    "Construction software designed by contractors, for contractors. Join the waitlist.",
+    "Focused tools built to radically grow your business. Join the waitlist.",
 };
 
 export default function RootLayout({
