@@ -88,10 +88,7 @@ export default function Home() {
       <section className="px-6 pb-24 sm:px-10">
         <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
           <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 dark:border-neutral-800 dark:bg-neutral-900">
-            <span className="inline-block rounded-full bg-black px-3 py-1 text-xs font-medium uppercase tracking-wider text-white dark:bg-white dark:text-black">
-              Coming Soon
-            </span>
-            <h2 className="mt-4 font-[family-name:var(--font-druk)] text-xl uppercase tracking-tight">
+            <h2 className="font-[family-name:var(--font-druk)] text-xl uppercase tracking-tight">
               HVAC Sales Tool
             </h2>
             <p className="mt-2 text-gray-600 dark:text-neutral-400">
@@ -102,10 +99,7 @@ export default function Home() {
           </div>
 
           <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 dark:border-neutral-800 dark:bg-neutral-900">
-            <span className="inline-block rounded-full bg-black px-3 py-1 text-xs font-medium uppercase tracking-wider text-white dark:bg-white dark:text-black">
-              Coming Soon
-            </span>
-            <h2 className="mt-4 font-[family-name:var(--font-druk)] text-xl uppercase tracking-tight">
+            <h2 className="font-[family-name:var(--font-druk)] text-xl uppercase tracking-tight">
               Plumbing Sales Tool
             </h2>
             <p className="mt-2 text-gray-600 dark:text-neutral-400">
