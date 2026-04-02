@@ -14,9 +14,9 @@ export default function Home() {
         <Image
           src="/wizard-logo.png"
           alt="Pipeworks wizard logo"
-          width={40}
-          height={40}
-          className="h-10 w-auto"
+          width={50}
+          height={67}
+          className="h-12 w-auto sm:h-14"
         />
         <Image
           src="/pipeworks-wordmark.svg"
@@ -28,13 +28,22 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section className="flex flex-col items-center px-6 pt-24 pb-20 text-center sm:pt-32 sm:pb-28">
-        <h1 className="font-[family-name:var(--font-druk)] text-4xl uppercase leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+      <section className="relative flex flex-col items-center px-6 pt-24 pb-20 text-center sm:pt-32 sm:pb-28 overflow-hidden">
+        {/* Background wizard */}
+        <Image
+          src="/wizard-logo.png"
+          alt=""
+          width={501}
+          height={673}
+          className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-auto opacity-[0.04] select-none sm:h-[600px] lg:h-[700px]"
+          aria-hidden="true"
+        />
+        <h1 className="relative font-[family-name:var(--font-druk)] text-4xl uppercase leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           Software so good
           <br />
           it feels like magic
         </h1>
-        <p className="mt-6 max-w-xl text-lg text-gray-600 sm:text-xl">
+        <p className="relative mt-6 max-w-xl text-lg text-gray-600 sm:text-xl">
           Construction software designed by contractors, for contractors.
           Focused tools that solve one problem at a time.
         </p>
@@ -42,7 +51,7 @@ export default function Home() {
         {/* Email Capture */}
         <form
           action={formAction}
-          className="mt-10 flex w-full max-w-md flex-col gap-3 sm:flex-row"
+          className="relative mt-10 flex w-full max-w-md flex-col gap-3 sm:flex-row"
         >
           <input
             type="email"
@@ -63,7 +72,7 @@ export default function Home() {
 
         {state && (
           <p
-            className={`mt-4 text-sm ${state.success ? "text-green-600" : "text-red-600"}`}
+            className={`relative mt-4 text-sm ${state.success ? "text-green-600" : "text-red-600"}`}
           >
             {state.message}
           </p>
