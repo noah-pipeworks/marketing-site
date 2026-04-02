@@ -8,7 +8,7 @@ export default function Home() {
   const [state, formAction, isPending] = useActionState(joinWaitlist, null);
 
   return (
-    <div className="min-h-screen bg-white text-black dark:bg-neutral-950 dark:text-white">
+    <div className="min-h-screen bg-white text-black">
       {/* Nav */}
       <nav className="flex items-center gap-3 px-6 py-4 sm:px-10">
         <Image
@@ -16,14 +16,14 @@ export default function Home() {
           alt="Pipeworks wizard logo"
           width={50}
           height={67}
-          className="h-12 w-auto sm:h-14 dark-invert"
+          className="h-12 w-auto sm:h-14"
         />
         <Image
           src="/pipeworks-wordmark.svg"
           alt="Pipeworks"
           width={160}
           height={28}
-          className="h-6 w-auto sm:h-7 dark-invert"
+          className="h-6 w-auto sm:h-7"
         />
       </nav>
 
@@ -35,7 +35,7 @@ export default function Home() {
           alt=""
           width={501}
           height={673}
-          className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-auto opacity-[0.12] select-none sm:h-[600px] lg:h-[700px] dark-invert"
+          className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-auto opacity-[0.12] select-none sm:h-[600px] lg:h-[700px]"
           aria-hidden="true"
         />
         <h1 className="relative font-[family-name:var(--font-druk)] text-4xl uppercase leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -45,7 +45,7 @@ export default function Home() {
           <br />
           Tools
         </h1>
-        <p className="relative mt-6 max-w-xl text-lg text-gray-600 dark:text-neutral-400 sm:text-xl">
+        <p className="relative mt-6 max-w-xl text-lg text-gray-600 sm:text-xl">
           Focused tools that are built to radically grow your business.
         </p>
 
@@ -64,12 +64,12 @@ export default function Home() {
             placeholder="you@company.com"
             required
             disabled={isPending}
-            className="flex-1 rounded-lg border border-gray-300 bg-white px-4 py-3 text-base text-black outline-none transition-colors placeholder:text-gray-400 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500 dark:focus-visible:ring-white dark:focus-visible:ring-offset-neutral-950"
+            className="flex-1 rounded-lg border border-gray-300 bg-white px-4 py-3 text-base text-black outline-none transition-colors placeholder:text-gray-400 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:opacity-50"
           />
           <button
             type="submit"
             disabled={isPending}
-            className="rounded-lg bg-black px-6 py-3 text-base font-medium text-white transition-all hover:scale-[1.02] hover:opacity-90 active:scale-[0.98] disabled:opacity-50 dark:bg-white dark:text-black"
+            className="rounded-lg bg-black px-6 py-3 text-base font-medium text-white transition-all hover:scale-[1.02] hover:opacity-90 active:scale-[0.98] disabled:opacity-50"
           >
             {isPending ? "Joining..." : "Get early access"}
           </button>
@@ -77,7 +77,7 @@ export default function Home() {
 
         {state && (
           <p
-            className={`relative mt-4 text-sm ${state.success ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"}`}
+            className={`relative mt-4 text-sm ${state.success ? "text-green-600" : "text-red-600"}`}
           >
             {state.message}
           </p>
@@ -87,22 +87,22 @@ export default function Home() {
       {/* Products */}
       <section className="px-6 pb-24 sm:px-10">
         <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
-          <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 dark:border-neutral-800 dark:bg-neutral-900">
+          <div className="rounded-xl border border-gray-200 bg-gray-50 p-8">
             <h2 className="font-[family-name:var(--font-druk)] text-xl uppercase">
               HVAC Sales Tool
             </h2>
-            <p className="mt-2 text-gray-600 dark:text-neutral-400">
+            <p className="mt-2 text-gray-600">
               Build professional HVAC proposals in a revolutionary way. System
               builder, built-in financing options, dynamic presentation
               generator.
             </p>
           </div>
 
-          <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 dark:border-neutral-800 dark:bg-neutral-900">
+          <div className="rounded-xl border border-gray-200 bg-gray-50 p-8">
             <h2 className="font-[family-name:var(--font-druk)] text-xl uppercase">
               Plumbing Sales Tool
             </h2>
-            <p className="mt-2 text-gray-600 dark:text-neutral-400">
+            <p className="mt-2 text-gray-600">
               Completely change how you approach plumbing estimation with an
               industry defining way to price any job on the spot.
             </p>
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 px-6 py-8 text-center text-sm text-gray-500 dark:border-neutral-800 dark:text-neutral-500">
+      <footer className="border-t border-gray-200 px-6 py-8 text-center text-sm text-gray-500">
         &copy; {new Date().getFullYear()} Pipeworks. All rights reserved.
       </footer>
     </div>

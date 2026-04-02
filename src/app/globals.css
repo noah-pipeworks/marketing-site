@@ -4,9 +4,3 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-druk: var(--font-druk), sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  .dark-invert {
-    filter: invert(1);
-  }
-}
