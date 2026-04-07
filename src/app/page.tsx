@@ -10,21 +10,29 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Nav */}
-      <nav className="flex items-center gap-3 px-6 py-4 sm:px-10">
-        <Image
-          src="/wizard-logo.png"
-          alt="Pipeworks wizard logo"
-          width={50}
-          height={67}
-          className="h-12 w-auto sm:h-14"
-        />
-        <Image
-          src="/pipeworks-wordmark.svg"
-          alt="Pipeworks"
-          width={160}
-          height={28}
-          className="h-6 w-auto sm:h-7"
-        />
+      <nav className="flex items-center justify-between px-6 py-4 sm:px-10">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/wizard-logo.png"
+            alt="Pipeworks wizard logo"
+            width={50}
+            height={67}
+            className="h-12 w-auto sm:h-14"
+          />
+          <Image
+            src="/pipeworks-wordmark.svg"
+            alt="Pipeworks"
+            width={160}
+            height={28}
+            className="h-6 w-auto sm:h-7"
+          />
+        </div>
+        <a
+          href="https://app.pipeworks.io"
+          className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-black transition-all hover:bg-black hover:text-white hover:border-black active:scale-[0.98]"
+        >
+          Log in
+        </a>
       </nav>
 
       {/* Hero */}
