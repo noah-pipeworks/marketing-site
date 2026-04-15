@@ -147,7 +147,7 @@ export default function Home() {
               </h1>
 
               <p className="mx-auto mt-6 max-w-lg text-lg text-ink-soft sm:text-xl">
-                Sales software for the trades. Quoting, proposals, and follow-up — on any device, at any kitchen table.
+                Sales software for the trades. Quoting, proposals, and follow-up on any device, at any kitchen table.
               </p>
 
               <div className="mt-10 flex flex-col items-center">
@@ -202,7 +202,7 @@ export default function Home() {
                   Comfort Advisor App
                 </h2>
                 <p className="mt-4 text-lg text-ink-soft">
-                  A smart tool designed to assist you in every comfort advising scenario. Build proposals on-site, match equipment, present financing options, and close deals, all from a tablet at the kitchen table.
+                  A smart tool designed to work with you at any home. Build proposals on-site, match equipment, present financing options, and close deals.
                 </p>
                 <ul className="mt-6 space-y-2">
                   <li className="text-sm">
@@ -267,45 +267,35 @@ export default function Home() {
             </div>
           </section>
 
-          {/* ============ SCHEDULER ============ */}
+          {/* ============ FIELD REPORT ============ */}
           <section className="px-8 py-20 sm:px-16 sm:py-28">
             <div className="mx-auto flex flex-col gap-10 md:flex-row md:items-center">
-              {/* Browser frame placeholder */}
+              {/* iPad frame placeholder */}
               <div className="md:w-[55%]">
-                <div className="overflow-hidden rounded-lg border-2 border-dashed border-line-strong bg-bg-elevated">
-                  {/* Browser chrome */}
-                  <div className="flex items-center gap-1.5 border-b border-line px-3 py-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
-                    <div className="ml-2 h-4 flex-1 rounded bg-bg-dim" />
-                  </div>
-                  {/* Content area */}
-                  <div className="flex aspect-[16/10] items-center justify-center">
-                    <p className="text-sm text-ink-softer">Scheduler screenshot</p>
-                  </div>
+                <div className="flex aspect-[4/3] items-center justify-center rounded-2xl border-2 border-dashed border-line-strong bg-bg-elevated">
+                  <p className="text-sm text-ink-softer">Field Report screenshot</p>
                 </div>
               </div>
               {/* Text */}
               <div className="md:w-[45%]">
                 <h2 className="text-xs font-semibold tracking-widest text-ink-soft uppercase">
-                  Scheduler
+                  Field Report
                 </h2>
                 <p className="mt-4 text-lg text-ink-soft">
-                  Keep your team organized and your customers on time. Schedule appointments, assign comfort advisors, and track every job from scheduled to sold.
+                  Bridge the gap between the sale and the install. Walk the job site, snap photos, annotate them on the spot, and hand your install crew everything they need to know before they even start the job.
                 </p>
                 <ul className="mt-6 space-y-2">
                   <li className="text-sm">
-                    <span className="font-bold text-ink">Appointment Management:</span>{" "}
-                    <span className="text-ink-soft">create, assign, and track every visit</span>
+                    <span className="font-bold text-ink">Guided Surveys:</span>{" "}
+                    <span className="text-ink-soft">template-driven checklists built for HVAC installs</span>
                   </li>
                   <li className="text-sm">
-                    <span className="font-bold text-ink">Team Scheduling:</span>{" "}
-                    <span className="text-ink-soft">see who&apos;s available and where they&apos;re going</span>
+                    <span className="font-bold text-ink">Photo Annotation:</span>{" "}
+                    <span className="text-ink-soft">mark up job site photos with notes and measurements</span>
                   </li>
                   <li className="text-sm">
-                    <span className="font-bold text-ink">Status Tracking:</span>{" "}
-                    <span className="text-ink-soft">scheduled, in progress, completed at a glance</span>
+                    <span className="font-bold text-ink">Auto-Attach:</span>{" "}
+                    <span className="text-ink-soft">every report links to the appointment and proposal</span>
                   </li>
                 </ul>
               </div>
@@ -333,7 +323,7 @@ export default function Home() {
                   <span className="timeline-label text-sm font-medium text-bg-elevated">Follow-Up Tool</span>
                 </div>
                 <div className="timeline-item">
-                  <span className="timeline-label text-sm font-medium text-bg-elevated">Plumbing Support</span>
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">Plumbing App</span>
                 </div>
                 <div className="timeline-item">
                   <span className="timeline-label text-sm font-medium text-bg-elevated">HVAC Load Calculations</span>
@@ -371,21 +361,21 @@ export default function Home() {
                   <p className="text-xs font-bold tracking-widest text-ink-softer uppercase">I</p>
                   <h3 className="mt-3 text-xl font-bold">Built by contractors.</h3>
                   <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                    Pipeworks is built by people who&apos;ve sold HVAC, wrenched on systems, and run the numbers at kitchen tables. The software reflects the trade because it came from it.
+                    Pipeworks is built by people who work in the industry out of a frustration with existing options available. It reflects the trades because it came from them.
                   </p>
                 </div>
                 <div className="border-t-2 border-ink pt-6">
                   <p className="text-xs font-bold tracking-widest text-ink-softer uppercase">II</p>
                   <h3 className="mt-3 text-xl font-bold">Focused tools, not platforms.</h3>
                   <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                    Every Pipeworks product solves one problem extremely well. No bloated all-in-one suites. Use what you need — ignore what you don&apos;t.
+                    Every Pipeworks product solves one problem extremely well. No bloated all-in-one suites. Use what you need, ignore what you don&apos;t.
                   </p>
                 </div>
                 <div className="border-t-2 border-ink pt-6">
                   <p className="text-xs font-bold tracking-widest text-ink-softer uppercase">III</p>
                   <h3 className="mt-3 text-xl font-bold">Software that feels like magic.</h3>
                   <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                    The best tools disappear into the work. Ours are fast, quiet, and do the right thing by default — the way good tools should.
+                    The best tools disappear into the work. Ours are fast, quiet, and do the right thing by default. The way good tools should.
                   </p>
                 </div>
               </div>
@@ -434,7 +424,7 @@ export default function Home() {
                   >
                     Reach out
                   </a>{" "}
-                  — a real person will reply.
+                  and a real person will reply.
                 </p>
               </div>
 
@@ -444,7 +434,7 @@ export default function Home() {
                     Who is this for?
                   </summary>
                   <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                    HVAC contractors and their sales teams who sit across the kitchen table from homeowners and need to present options, prices, and financing. If you&apos;ve ever fumbled with a clipboard, a calculator, and three different binders on a sales call — you&apos;re the target.
+                    HVAC contractors and their sales teams who sit across the kitchen table from homeowners and need to present options, prices, and financing. If you&apos;ve ever fumbled with a clipboard, a calculator, and three different binders on a sales call, this is for you.
                   </p>
                 </details>
                 <details className="faq-item border-b border-line py-5">
@@ -468,7 +458,7 @@ export default function Home() {
                     Is my data safe?
                   </summary>
                   <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                    Yes. All traffic is SSL-encrypted. Authentication uses Supabase Auth with row-level security enforced at the database — no client ever sees another customer&apos;s data. No third-party analytics that sell your info. Hosted in the US.
+                    Yes. All traffic is SSL-encrypted. Authentication uses Supabase Auth with row-level security enforced at the database so no client ever sees another customer&apos;s data. No third-party analytics that sell your info. Hosted in the US.
                   </p>
                 </details>
                 <details className="faq-item border-b border-line py-5">
@@ -476,7 +466,7 @@ export default function Home() {
                     Can I influence the roadmap?
                   </summary>
                   <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                    Yes — that&apos;s the whole point of being early. Beta customers get a direct line to the founder and most features on the roadmap came from contractor feedback. If you want software built around how you actually work, this is the window.
+                    Yes, that&apos;s the whole point of being early. Beta customers get a direct line to the founder and most features on the roadmap came from contractor feedback. If you want software built around how you actually work, this is the window.
                   </p>
                 </details>
               </div>
@@ -529,7 +519,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="mt-4 max-w-[240px] text-sm leading-relaxed text-ink-softer">
-                  Focused software for contractors. Built by contractors, for contractors.
+                  Focused software for the trades.
                 </p>
               </div>
 
@@ -550,7 +540,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a href="#products" className="text-sm text-ink-softer transition-colors hover:text-ink">
-                      Scheduler
+                      Field Report
                     </a>
                   </li>
                 </ul>
