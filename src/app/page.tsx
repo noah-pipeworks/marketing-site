@@ -311,10 +311,10 @@ export default function Home() {
                 <span>US-based</span>
               </div>
               <a
-                href="mailto:noah@pipeworks.io"
+                href="mailto:contact@pipeworks.io"
                 className="inline-flex self-start rounded-lg border border-white/20 px-5 py-2.5 text-sm font-medium text-bg-elevated transition-colors hover:bg-bg-elevated hover:text-ink sm:self-auto"
               >
-                noah@pipeworks.io
+                Contact us
               </a>
             </div>
           </section>
@@ -334,10 +334,10 @@ export default function Home() {
                 <p className="mt-4 text-sm text-ink-soft">
                   Can&apos;t find what you&apos;re looking for?{" "}
                   <a
-                    href="mailto:noah@pipeworks.io"
+                    href="mailto:contact@pipeworks.io"
                     className="font-medium text-ink underline underline-offset-2"
                   >
-                    Email noah@pipeworks.io
+                    Reach out
                   </a>{" "}
                   — a real person will reply.
                 </p>
@@ -472,7 +472,7 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:noah@pipeworks.io" className="text-sm text-ink-softer transition-colors hover:text-ink">
+                    <a href="mailto:contact@pipeworks.io" className="text-sm text-ink-softer transition-colors hover:text-ink">
                       Contact
                     </a>
                   </li>
