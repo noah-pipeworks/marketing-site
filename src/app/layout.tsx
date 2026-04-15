@@ -13,27 +13,27 @@ const drukWideBold = localFont({
 });
 
 export const metadata = {
-  title: "Pipeworks — Magical Sales Tools",
+  title: "Pipeworks — Sales software for the trades",
   description:
-    "Focused tools built to radically grow your business. Join the waitlist.",
+    "Quoting, proposals, and follow-up on any device. Built by contractors, for contractors. Join the waitlist.",
   metadataBase: new URL("https://pipeworks.io"),
   icons: {
     icon: "/wizard-icon.png",
     apple: "/wizard-icon.png",
   },
   openGraph: {
-    title: "Pipeworks — Magical Sales Tools",
+    title: "Pipeworks — Sales software for the trades",
     description:
-      "Focused tools built to radically grow your business. Join the waitlist.",
+      "Quoting, proposals, and follow-up on any device. Built by contractors, for contractors. Join the waitlist.",
     url: "https://pipeworks.io",
     siteName: "Pipeworks",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Pipeworks — Magical Sales Tools",
+    title: "Pipeworks — Sales software for the trades",
     description:
-      "Focused tools built to radically grow your business. Join the waitlist.",
+      "Quoting, proposals, and follow-up on any device. Built by contractors, for contractors. Join the waitlist.",
   },
   other: {
     "theme-color": "#fafafa",

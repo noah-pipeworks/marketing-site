@@ -5,6 +5,7 @@
   --font-druk: var(--font-druk), sans-serif;
 
   --color-bg: #fafafa;
+  --color-bg-dim: #f4f4f5;
   --color-bg-elevated: #ffffff;
   --color-ink: #111111;
   --color-ink-soft: #555555;
@@ -31,4 +32,23 @@
 }
 .skip-link:focus {
   top: 0;
+}
+
+/* FAQ accordion */
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-ink-softer);
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after {
+  content: "−";
 }
