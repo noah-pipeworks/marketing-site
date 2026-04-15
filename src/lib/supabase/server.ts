@@ -2,11 +2,11 @@ import { createClient } from "@supabase/supabase-js";
 
 export function createServiceClient() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const secretKey = process.env.SUPABASE_SECRET_KEY;
 
-  if (!supabaseUrl || !serviceRoleKey) {
-    throw new Error("Missing Supabase environment variables");
+  if (!supabaseUrl || !secretKey) {
+    throw new Error("Missing SUPABASE_SECRET_KEY in env");
   }
 
-  return createClient(supabaseUrl, serviceRoleKey);
+  return createClient(supabaseUrl, secretKey);
 }
