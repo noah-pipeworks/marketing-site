@@ -70,7 +70,7 @@ export default function Home() {
       <div className="min-h-screen bg-bg text-ink">
         {/* Nav */}
         <nav className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur-md">
-          <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 sm:px-10">
+          <div className="mx-auto flex items-center justify-between px-8 py-4 sm:px-16">
             <div className="flex items-center gap-3">
               <Image
                 src="/wizard-logo.png"
@@ -121,7 +121,7 @@ export default function Home() {
 
         <main id="main">
           {/* ============ HERO ============ */}
-          <section className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden px-6 py-24 text-center">
+          <section className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden px-8 py-24 text-center">
             <Image
               src="/wizard-logo.png"
               alt=""
@@ -166,7 +166,7 @@ export default function Home() {
 
           {/* ============ BUILT FOR ============ */}
           <section className="border-y border-line bg-bg-dim">
-            <div className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:gap-12 sm:px-10">
+            <div className="mx-auto flex flex-col gap-6 px-8 py-10 sm:flex-row sm:items-center sm:gap-12 sm:px-16">
               <p className="shrink-0 text-xs font-semibold tracking-widest text-ink-softer uppercase">
                 Built for
               </p>
@@ -187,81 +187,176 @@ export default function Home() {
             </div>
           </section>
 
-          {/* ============ HVAC PRODUCT ============ */}
-          <section id="products" className="px-6 py-20 sm:px-10 sm:py-28">
-            <div className="mx-auto max-w-5xl">
-              <p className="text-xs font-semibold tracking-widest text-ink-softer uppercase">
-                Product 01 · Available now
-              </p>
-              <h2 className="mt-3 font-[family-name:var(--font-druk)] text-3xl uppercase leading-tight sm:text-4xl md:text-5xl">
-                The HVAC Sales Tool.
-              </h2>
-              <p className="mt-4 max-w-xl text-lg text-ink-soft">
-                Build professional HVAC proposals in minutes. Equipment selection, financing, and presentations — all in one place, designed by a real HVAC sales pro.
-              </p>
+          {/* ============ COMFORT ADVISOR APP ============ */}
+          <section id="products" className="px-8 py-20 sm:px-16 sm:py-28">
+            <div className="mx-auto flex flex-col gap-10 md:flex-row md:items-center">
+              {/* iPad frame placeholder */}
+              <div className="md:w-[55%]">
+                <div className="flex aspect-[4/3] items-center justify-center rounded-2xl border-2 border-dashed border-line-strong bg-bg-elevated">
+                  <p className="text-sm text-ink-softer">Comfort Advisor App screenshot</p>
+                </div>
+              </div>
+              {/* Text */}
+              <div className="md:w-[45%]">
+                <h2 className="text-xs font-semibold tracking-widest text-ink-soft uppercase">
+                  Comfort Advisor App
+                </h2>
+                <p className="mt-4 text-lg text-ink-soft">
+                  A smart tool designed to assist you in every comfort advising scenario. Build proposals on-site, match equipment, present financing options, and close deals, all from a tablet at the kitchen table.
+                </p>
+                <ul className="mt-6 space-y-2">
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">System Builder:</span>{" "}
+                    <span className="text-ink-soft">auto-matched equipment with AHRI data</span>
+                  </li>
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Built-in Financing:</span>{" "}
+                    <span className="text-ink-soft">multiple plans, no separate calculators</span>
+                  </li>
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Dynamic Presentations:</span>{" "}
+                    <span className="text-ink-soft">branded proposals, ready to sign</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
-              <div className="mt-12 grid gap-5 sm:grid-cols-3">
-                <div className="rounded-xl border border-line bg-bg-elevated p-7">
-                  <h3 className="text-base font-bold">System Builder</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                    Pick an outdoor unit and we auto-match the indoor equipment. No more flipping through catalogs or checking AHRI sheets by hand.
-                  </p>
-                </div>
-                <div className="rounded-xl border border-line bg-bg-elevated p-7">
-                  <h3 className="text-base font-bold">Built-in Financing</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                    Multiple financing plans right inside the proposal. Customers see monthly payments alongside the system — no separate calculators.
-                  </p>
-                </div>
-                <div className="rounded-xl border border-line bg-bg-elevated p-7">
-                  <h3 className="text-base font-bold">Dynamic Presentations</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                    Beautiful proposals generated on the fly. Present from your tablet at the kitchen table — branded, professional, ready to sign.
-                  </p>
+          {/* ============ ADMIN PORTAL ============ */}
+          <section className="bg-bg-dim px-8 py-20 sm:px-16 sm:py-28">
+            <div className="mx-auto flex flex-col-reverse gap-10 md:flex-row md:items-center">
+              {/* Text */}
+              <div className="md:w-[45%]">
+                <h2 className="text-xs font-semibold tracking-widest text-ink-soft uppercase">
+                  Admin Portal
+                </h2>
+                <p className="mt-4 text-lg text-ink-soft">
+                  Where the magic happens. Manage your team, equipment, pricing, and proposals from one dashboard. Track what&apos;s selling, who&apos;s closing, and what needs attention without digging through spreadsheets.
+                </p>
+                <ul className="mt-6 space-y-2">
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Equipment & Pricing:</span>{" "}
+                    <span className="text-ink-soft">manage your full inventory and financing options</span>
+                  </li>
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Team Management:</span>{" "}
+                    <span className="text-ink-soft">assign salespeople, track performance</span>
+                  </li>
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Proposal Tracking:</span>{" "}
+                    <span className="text-ink-soft">see every deal from draft to signed</span>
+                  </li>
+                </ul>
+              </div>
+              {/* Browser frame placeholder */}
+              <div className="md:w-[55%]">
+                <div className="overflow-hidden rounded-lg border-2 border-dashed border-line-strong bg-bg-elevated">
+                  {/* Browser chrome */}
+                  <div className="flex items-center gap-1.5 border-b border-line px-3 py-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+                    <div className="ml-2 h-4 flex-1 rounded bg-bg-dim" />
+                  </div>
+                  {/* Content area */}
+                  <div className="flex aspect-[16/10] items-center justify-center">
+                    <p className="text-sm text-ink-softer">Admin Portal screenshot</p>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* ============ PLUMBING TEASER ============ */}
-          <section className="border-y border-line bg-bg-dim px-6 py-20 sm:px-10 sm:py-28">
-            <div className="mx-auto max-w-5xl">
-              <p className="text-xs font-semibold tracking-widest text-ink-softer uppercase">
-                Product 02 · Coming next
-              </p>
-              <h2 className="mt-3 font-[family-name:var(--font-druk)] text-3xl uppercase leading-tight sm:text-4xl md:text-5xl">
-                The Plumbing Sales Tool.
-              </h2>
-              <p className="mt-4 max-w-xl text-lg text-ink-soft">
-                Price any plumbing job on the spot. Same approach — tuned for the plumbing trade.
-              </p>
+          {/* ============ SCHEDULER ============ */}
+          <section className="px-8 py-20 sm:px-16 sm:py-28">
+            <div className="mx-auto flex flex-col gap-10 md:flex-row md:items-center">
+              {/* Browser frame placeholder */}
+              <div className="md:w-[55%]">
+                <div className="overflow-hidden rounded-lg border-2 border-dashed border-line-strong bg-bg-elevated">
+                  {/* Browser chrome */}
+                  <div className="flex items-center gap-1.5 border-b border-line px-3 py-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+                    <div className="ml-2 h-4 flex-1 rounded bg-bg-dim" />
+                  </div>
+                  {/* Content area */}
+                  <div className="flex aspect-[16/10] items-center justify-center">
+                    <p className="text-sm text-ink-softer">Scheduler screenshot</p>
+                  </div>
+                </div>
+              </div>
+              {/* Text */}
+              <div className="md:w-[45%]">
+                <h2 className="text-xs font-semibold tracking-widest text-ink-soft uppercase">
+                  Scheduler
+                </h2>
+                <p className="mt-4 text-lg text-ink-soft">
+                  Keep your team organized and your customers on time. Schedule appointments, assign comfort advisors, and track every job from scheduled to sold.
+                </p>
+                <ul className="mt-6 space-y-2">
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Appointment Management:</span>{" "}
+                    <span className="text-ink-soft">create, assign, and track every visit</span>
+                  </li>
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Team Scheduling:</span>{" "}
+                    <span className="text-ink-soft">see who&apos;s available and where they&apos;re going</span>
+                  </li>
+                  <li className="text-sm">
+                    <span className="font-bold text-ink">Status Tracking:</span>{" "}
+                    <span className="text-ink-soft">scheduled, in progress, completed at a glance</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
-              <div className="mt-12 grid gap-5 sm:grid-cols-3">
-                <div className="rounded-xl border border-line bg-bg-elevated p-7">
-                  <h3 className="text-base font-bold">Spot Pricing</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                    Catalog-driven job pricing that matches how real plumbers quote work at the door.
-                  </p>
+          {/* ============ ROADMAP ============ */}
+          <section className="bg-ink px-8 py-20 sm:px-16 sm:py-28">
+            <div className="mx-auto text-center">
+              <p className="text-xs font-semibold tracking-widest text-ink-softer uppercase">
+                What&apos;s Next
+              </p>
+              <h2 className="mt-3 font-[family-name:var(--font-druk)] text-3xl uppercase leading-tight text-bg-elevated sm:text-4xl md:text-5xl">
+                Built for where
+                <br className="hidden sm:block" />
+                {" "}you&apos;re going.
+              </h2>
+              <p className="mx-auto mt-4 max-w-lg text-lg text-line">
+                We&apos;re going deep before we go wide. Here&apos;s what&apos;s on the workbench.
+              </p>
+            </div>
+            <div className="mx-auto mt-12">
+              <div className="timeline">
+                <div className="timeline-item">
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">Follow-Up Tool</span>
                 </div>
-                <div className="rounded-xl border border-line bg-bg-elevated p-7">
-                  <h3 className="text-base font-bold">Service Menus</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                    Tiered good/better/best options your tech can walk through without flipping binders.
-                  </p>
+                <div className="timeline-item">
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">Plumbing Support</span>
                 </div>
-                <div className="rounded-xl border border-line bg-bg-elevated p-7">
-                  <h3 className="text-base font-bold">On-the-spot Close</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                    Sign, collect payment, and schedule the work — all without leaving the app.
-                  </p>
+                <div className="timeline-item">
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">HVAC Load Calculations</span>
+                </div>
+                <div className="timeline-item">
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">Ductwork Sizing Charts</span>
+                </div>
+                <div className="timeline-item">
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">Personalized Display Visuals</span>
+                </div>
+                <div className="timeline-item">
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">Commercial Selling Support</span>
+                </div>
+                <div className="timeline-item">
+                  <span className="timeline-label text-sm font-medium text-bg-elevated">Custom Trade Options</span>
                 </div>
               </div>
             </div>
           </section>
 
           {/* ============ WHY PIPEWORKS ============ */}
-          <section id="why" className="px-6 py-20 sm:px-10 sm:py-28">
-            <div className="mx-auto max-w-5xl">
+          <section id="why" className="px-8 py-20 sm:px-16 sm:py-28">
+            <div className="mx-auto">
               <p className="text-xs font-semibold tracking-widest text-ink-softer uppercase">
                 Why Pipeworks
               </p>
@@ -299,7 +394,7 @@ export default function Home() {
 
           {/* ============ TRUST STRIP ============ */}
           <section className="border-y border-ink bg-ink text-bg-elevated">
-            <div className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-10">
+            <div className="mx-auto flex flex-col gap-6 px-8 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-16">
               <div>
                 <p className="text-sm font-semibold">Independently built. Seriously run.</p>
                 <p className="mt-1 text-xs text-ink-softer">Solo-founded. Real contact. Real roadmap.</p>
@@ -320,8 +415,8 @@ export default function Home() {
           </section>
 
           {/* ============ FAQ ============ */}
-          <section id="faq" className="px-6 py-20 sm:px-10 sm:py-28">
-            <div className="mx-auto grid max-w-5xl gap-12 sm:grid-cols-[0.4fr_0.6fr] sm:gap-16">
+          <section id="faq" className="px-8 py-20 sm:px-16 sm:py-28">
+            <div className="mx-auto grid gap-12 sm:grid-cols-[0.4fr_0.6fr] sm:gap-16">
               <div>
                 <p className="text-xs font-semibold tracking-widest text-ink-softer uppercase">
                   Frequently asked
@@ -389,7 +484,7 @@ export default function Home() {
           </section>
 
           {/* ============ FINAL CTA ============ */}
-          <section className="border-t border-line bg-bg-dim px-6 py-20 text-center sm:py-28">
+          <section className="border-t border-line bg-bg-dim px-8 py-20 text-center sm:py-28">
             <div className="mx-auto max-w-2xl">
               <h2 className="font-[family-name:var(--font-druk)] text-3xl uppercase leading-tight sm:text-4xl md:text-5xl">
                 Software so good
@@ -412,8 +507,8 @@ export default function Home() {
         </main>
 
         {/* ============ FOOTER ============ */}
-        <footer className="border-t border-line px-6 py-12 sm:px-10">
-          <div className="mx-auto max-w-5xl">
+        <footer className="border-t border-line px-8 py-12 sm:px-16">
+          <div className="mx-auto">
             <div className="grid gap-10 sm:grid-cols-[1.5fr_1fr_1fr_1fr]">
               <div>
                 <div className="flex items-center gap-3">
@@ -445,12 +540,17 @@ export default function Home() {
                 <ul className="mt-4 space-y-2.5">
                   <li>
                     <a href="#products" className="text-sm text-ink-softer transition-colors hover:text-ink">
-                      HVAC Sales Tool
+                      Comfort Advisor App
                     </a>
                   </li>
                   <li>
                     <a href="#products" className="text-sm text-ink-softer transition-colors hover:text-ink">
-                      Plumbing Sales Tool
+                      Admin Portal
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#products" className="text-sm text-ink-softer transition-colors hover:text-ink">
+                      Scheduler
                     </a>
                   </li>
                 </ul>
