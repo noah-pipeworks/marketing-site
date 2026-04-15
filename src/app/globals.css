@@ -3,4 +3,32 @@
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-druk: var(--font-druk), sans-serif;
+
+  --color-bg: #fafafa;
+  --color-bg-elevated: #ffffff;
+  --color-ink: #111111;
+  --color-ink-soft: #555555;
+  --color-ink-softer: #777777;
+  --color-line: #e5e5e5;
+  --color-line-strong: #d4d4d4;
+  --color-success: #16a34a;
+  --color-error: #dc2626;
+}
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--color-ink);
+  color: var(--color-bg-elevated);
+  border-radius: 0 0 8px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
 }
