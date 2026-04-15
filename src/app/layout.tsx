@@ -35,6 +35,9 @@ export const metadata = {
     description:
       "Focused tools built to radically grow your business. Join the waitlist.",
   },
+  other: {
+    "theme-color": "#fafafa",
+  },
 };
 
 export default function RootLayout({
