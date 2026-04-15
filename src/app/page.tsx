@@ -134,7 +134,7 @@ export default function Home() {
 
             <div className="relative">
               <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-bg-elevated px-4 py-1.5 text-xs font-medium tracking-wide text-ink-soft uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-ink-soft" aria-hidden="true" />
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-error" aria-hidden="true" />
                 Private beta · HVAC first
               </p>
 
